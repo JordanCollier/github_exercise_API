@@ -1,4 +1,4 @@
-== README
+[√]== README
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -26,3 +26,22 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+
+## Github API
+
+-[√] Install the Gem.
+-[√] [Octokit Github Gem]("https://github.com/octokit/octokit.rb")
+-[√] Set tokens
+-[√] [Github]("https://github.com/settings/applications#personal-access-tokens")
+-[√] Make sure to hide files with secrets from github using .gitignore.
+-[√] [dotenv]("https://github.com/bkeepers/dotenv")
+
+
+
+## Stories
+-[] Build a rails application that interacts with github.
+-[] It lists your repositories.
+-[] It lists your location.
+-[] text field that returns a searched user's information including Location, Created at, email, name, company, avatar.
+-[] text field that lists a searched users repositories.

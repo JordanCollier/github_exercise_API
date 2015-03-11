@@ -1,0 +1,21 @@
+   <%= form_tag '/', method: :get %>
+   <%= label_tag 'Github User'%>
+   <%= text_field_tag :github_user %>
+   <%= submit_tag "Look up a User's Repositories" %>
+
+<% if @found_repos %>
+ <table>
+   <thead>
+     <tr>
+       <th>Repositories</th>
+     </tr>
+   </thead>
+   <tbody>
+     <% @found_repos.each do |repo| %>
+     <tr>
+       <td><%= repo.name %></td>
+     </tr>
+     <% end %>
+   </tbody>
+ </table>
+<% end %>
