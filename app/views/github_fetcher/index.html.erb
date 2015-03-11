@@ -19,3 +19,28 @@
    </tbody>
  </table>
 <% end %>
+
+<% if @found_user %>
+ <table border=1>
+   <thead>
+     <tr>
+       <th>LOCATION</th>
+       <th>Created at</th>
+       <th>Email</th>
+       <th>Name</th>
+       <th>Company</th>
+       <th>Avatar</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+     <td><%= @found_user.location %></td>
+     <td><%= @found_user.created_at %></td>
+     <td><%= @found_user.email %></td>
+     <td><%= @found_user.name %></td>
+     <td><%= @found_user.company %></td>
+     <td><%= image_tag @found_user.avatar_url %></td>
+   </tr>
+   </tbody>
+ </table>
+<% end %>

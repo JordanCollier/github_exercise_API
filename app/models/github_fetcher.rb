@@ -8,4 +8,8 @@ class GithubFetcher
     @client.repositories(github_user)
   end
 
+  def find_stats(github_user)
+    @client.user(github_user)
+  end
+
 end
